@@ -5,11 +5,11 @@
 
 Projeto em equipe,do modulo jQuery do curso fullStack de desenvolvimento Web da SoulCode.
 
-Link: https://djou-d.github.io/Projeto-Funk-Po/
+Link: https://soul-code-academy.github.io/bcw7-funkPo
 
 Equipe:
 
-Alana
+Alana Dias
 
 Bernardo
 
