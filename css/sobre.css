@@ -1,0 +1,322 @@
+/* RESETE (Djou)*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+html{
+  background-color: #5C7AEA;
+}
+
+textarea, input, button{
+  border: 0;
+  outline: none;
+}
+/* FIM DO RESETE (Djou)*/
+
+
+/* HEADER / NAV (Djou)*/
+#containerH{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  height: 100px;
+  
+  background-color: #3D56B2;
+}
+
+#nav{
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#logo{
+  width: 150px;
+}
+
+#busca{
+  display: flex;
+  gap: 10px;
+}
+
+#busca input{
+  width: 30vw;
+  height: 30px;
+  font-size: 1rem;
+
+  border-radius: 10px;
+}
+
+#busca button{
+  background-color: #3D56B2;
+  cursor: pointer;
+}
+
+#busca button img{
+  width: 20px;
+}
+
+
+#entrar{
+  color: #E6E6E6;
+  cursor: pointer;
+  text-align: center;
+
+  width: 60px;
+  height: 20px;
+  font-size: 1rem;
+}
+
+#btn{
+  position: absolute;
+  top: 6%;
+
+  width: 60px;
+  height: 25px;
+
+  background-color: #C49D21;
+  color: #E6E6E6;
+  text-shadow: 1px 1px #3D56B2;
+  box-shadow: 2px 2px 0px 1px rgb(75, 74, 73);
+
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btn:hover{
+  background-color: #cfa51b;
+}
+
+#btn:active{
+  box-shadow: 0px 0px 0px 0px rgb(75, 74, 73), inset 3px 3px 3px rgb(75, 74, 73);
+  transform: translate(3px, 3px);
+}
+
+
+#menu ul{
+  display: none;
+  position: absolute;
+  top: 7vw;
+  right: 3vw;
+
+  width: 15vw;
+  height: 30vw;
+
+  border-radius: 5px;
+  text-align: center;
+  background-color: #3d56b2c0;
+
+  z-index: 100;
+}
+
+
+#menu li{
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 4px;
+  width: 96%;
+  border-radius: 5px;
+
+}
+
+#menu li:hover{
+  border-bottom: 1.5px solid #cfa51b;
+  background-color: #5C7AEA;
+  transition: 1s ease background-color;
+
+}
+
+#menu li a{
+  font-size: 1rem;
+  color: #E6E6E6;
+  padding: 10px 40px;
+}
+/* FIM DO HEADER (Djou)*/
+
+/* ACESSIBILIDADE / ZOOM */
+.zoom{
+  position: fixed;
+  /* justify-content: center; */
+  width: 70px;
+  height: 30px;
+  margin-top: 20rem;
+  left: 0;
+  /* gap: 1rem; */
+}
+
+.zoom button{
+  font-weight: bold;
+  padding: .2rem;
+  color: #E6E6E6;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #14279B;
+  box-shadow: 1px 1px 10px #5C7AEA;
+
+  margin-top: 10px;
+}
+
+/* SECTION 1 SOBRE A EMPRESA (Djou)*/
+#sobre1{
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 500px;
+  margin:  10px auto 0 auto;
+}
+
+#sobre1 div{
+  background-color: #E6E6E6;
+  width: 650px;
+  padding: 20px;
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+#sobre1 h4{
+  font-size: 1.5rem;
+}
+
+
+
+/* QUEM SOMOS (Djou)*/
+.pquem{
+  text-align: justify;
+  padding: 10px;  
+  margin-top: 50px;
+  line-height: 25px;
+}
+
+.sobre1img{
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* TEXTO SOBRE FUNKOS (Djou)*/
+.pfunkos{
+  text-align: justify;
+  padding:10px;
+  line-height: 25px;
+}
+
+
+
+/* CULTURA DA EMPRESA, MISSÃO, VISÃO E VALORES (Djou)*/
+#cultura{
+  display: flex;
+  justify-content: space-around;
+  margin:  10px auto 0 auto;
+}
+
+#cultura div{
+  background-color: #3D56B2;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 30px;
+
+  width: 430px;
+  height: 300px;
+}
+
+
+.Pcultura{
+  font-size: 1rem;
+  color: white;
+  text-align: justify;
+}
+
+.Pcultura li{
+  text-align: center;
+}
+
+
+/* SOBRE 2, SOBRE OS FUNDADORES E PROJETISTAS (Djou)*/
+#sobre2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 20px;
+  gap: 10px;
+  margin:  10px;
+}
+
+
+
+#sobre2 div{
+  background-color: #E6E6E6;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+
+  width: 658px;
+  height: 300px;
+}
+
+#sobre2 img{
+  width: 130px;
+  height: 160px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 100%;
+  float: left;
+}
+
+#sobre2 p{
+  text-align: justify;
+  padding: 10px;
+  margin-top: 33px;
+  margin-left: 150px;
+  line-height: 30px;
+}
+
+
+/* FOOTER (Djou)*/
+#containerF{
+  background-color: #3D56B2;
+  padding: 10px;
+  margin-top: 10px;
+  height: 200px;
+
+  text-align: center;
+}
+
+#footerOrientação{
+  display: flex;
+  justify-content: space-around;
+}
+
+#footerOrientação div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+#footerOrientação div h3{
+  color: #C49D21;
+}
+
+#footerOrientação div a{
+  color: #E6E6E6;
+}
+/* FIM DO FOOTER (Djou)*/

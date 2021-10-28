@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funk Pô</title>
+
+  <!-- SCRIPT DO JQUERY (Djou)-->
+  <script src="js/jquery.js"></script>
+
+  <!-- SCRIPT DA PAGINA (Djou)-->
+  <script src="js/script.js"></script>
+
+  <!-- FONTES DO SITE (Djou)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS DO FORMULARIO -->
+  <link rel="stylesheet" href="css/formulario.css">
+
+  <!-- ICONE DA BARRA DE NAVEGAÇÃO (Djou)--> 
+    <link rel="shortcut icon" type="imagex/png" href="ico/favicon.png">
+    <!-- CSS DA PAGINA (Djou)-->
+  <link rel="stylesheet" href="css/index.css">
+  <!--  CSS RESPONSIVO (Djou)-->
+  <link rel="stylesheet" href="css/responsivo.css">
+
+  
+</head>
+<body id="home">
+
+  <!-- INICIO DO FORMULARIO / MODAL -->
+
+  <div class="bg-modal" id="modal">
+    <div class="modal">
+       <!--FORMULÁRIO DE INSCRIÇÃO (Alana e Bernardo)-->
+       <fieldset>
+            
+          <legend>Inscreva-se</legend>
+          
+            <form method="POST." name="insira" onsubmit="return enviarFormulario"  id="form">
+                
+                <div>
+                  <label>Nome: </label>
+                  <input type="text" name="nome"  placeholder="Digite aqui seu nome" id="nome" required/> 
+                  <label>Data de Nascimento: </label>
+                  <input type="Date" name="dataDeNascimento"  onblur="verificaIdade(this.value);" required />         
+                  <label>CPF: </label>
+                  <input type="text" name="cpf" size="12" maxlength="11" placeholder="Apenas números" onblur="verificaCPF()" required id="cpf"/>
+                </div>
+  
+                <div>
+                  <label>Telefone: </label>
+                  <input type="tel" name="telefone"  placeholder="() x xxxx xxxx"/> 
+                  <label>E-mail: </label>
+                  <input type="email" name="email" placeholder="Digite seu melhor e-mail" required id="email"/> 
+                </div>
+  
+                <div>
+                  <label>Gênero:</label>
+                  <input type="radio" name="genero"> Masculino
+                  <input type="radio" name="genero"> Feminino
+                  <input type="radio" name="genero" checked> Outro 
+                  <input type="text" name="genero"  placeholder="Especifique"/>
+                </div>
+  
+                <div id="text">
+                  <label>Menssagem: </label>
+                    <textarea name="mensagem" cols="35" rows="8" required></textarea>
+                    <div id="endereco">
+                        <label for="cep">CEP:</label>
+                        <input type="text" maxlength="9" id="cep" onblur="consultaCep()" required>
+                        <label for="logradouro">Rua:</label>
+                        <input type="text" id="logradouro" required>
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" required>
+                        <label for="localidade">Cidade:</label>
+                        <input type="text" id="localidade" required>
+                        <label for="uf">Estado</label><input type="text" id="uf">
+                    </div>
+                </div>
+                       <!-- AQUI É ONDE O VALOR CONCATENADO É ANCORADO -->
+                        
+                        <!-- MODAL -->
+                      <!-- ESSAS DIVS SÃO O MODAL -->
+                        <div id="fundoPopUp">
+                          <div id="popUp">
+                              
+                              <button id="ok">Ok</button>
+
+                              <!-- AQUI É ONDE O VALOR CONCATENADO É ANCORADO -->
+                            <div id="div"></div>
+
+
+                          </div>
+                        </div>
+
+
+                <div>
+                  <button type="text" name="submit"  value="enviar" id="btnSub">Enviar</button>
+                  <button type="reset" name="limpar">Limpar</button>
+                </div>         
+            
+          </form>
+  
+        </fieldset>
+      <span class="close" id="fecharModal">&times;</span>
+    </div>
+  </div>
+
+
+  <!-- INICIO DO HEADER / NAV (Djou)-->
+  <header id="containerH">
+    <a href="index.html"><img id="logo" src="img/Logo.png" alt="Funk Pô"></a>
+
+    <div id="busca">
+      <input type="text" id="barraBusca"  value=" Buscar...">
+      
+      <button type="submit"> 
+      <img src="ico/busca.png" alt="Icone de busca">
+      </button>
+    </div>  
+
+    <nav id="nav">
+      <input type="button" id="abrirModal" value="Entrar">
+      
+      
+      <div id="menu"> 
+        <input id="btn" type="button" value="Menu" class="acessibilidade">
+         
+        <ul >
+              <li><a class="acessibilidade" href="index.html">Home</a></li>
+              <li><a class="acessibilidade" href="sobre.html">Sobre</a></li>
+              <li><a class="acessibilidade" href="loja.html">Funko Pop!</a></li>
+              <li><a class="acessibilidade" href="loja.html#categoria1">Promoções</a></li>
+              <li><a class="acessibilidade" href="loja.html#categoria2">Premium</a></li>
+          </ul>
+      
+        </div> 
+   
+      </nav>
+  </header>
+
+  <!-- FIM DO HEADER / NAV (Djou)-->
+
+  <!-- BOTÕES DE ZOOM -->
+  <div class="zoom">
+    <button class="zoom1" onclick="fonte('a')">ZOOM +</button>
+    <button class="zoom1" onclick="fonte('d')">ZOOM -</button>
+  </div>
+  <!-- FIM DO ZOOM -->
+
+  <!-- SECTION PARA O CARROSSEL DE IMAGENS (Djou)-->
+    <div id="carrossel">
+      <div class="container" id="img">
+        <img src="img/img1.jpg" alt="">
+        <img src="img/img2.jpg" alt="">
+        <img src="img/img3.jpg" alt="">
+    </div>
+
+  </div>
+  <!-- FIM DO CARROSSEL (Djou)-->
+
+  <!-- INICIO DO MAIN (Djou)-->
+  <main id="containerM">
+    <!-- INICIO DO ASIDE, ORIENTAÇÃO A ESQUERDA (Djou)-->
+    <aside id="containerA">
+     <div>
+       <h4 class="acessibilidade">O que está acontecendo!?</h4> 
+
+       <div class="btnsAside">
+         
+         <a href="https://www.adorocinema.com/" target="_blank"><input class="acessibilidade" type="button" value="Filmes"></a>
+         
+         <a href="https://seriemaniacos.tv/" target="_blank"><input class="acessibilidade" type="button" value="Series"></a>
+         
+         <a href="https://www.funimation.com/pt-br/" target="_blank"> <input class="acessibilidade" type="button" value="Animes"></a>
+        
+         <a href="https://www.theenemy.com.br/" target="_blank"><input class="acessibilidade" type="button" value="Games"></a>
+         
+       </div>
+     </div>
+
+     <div>
+       <h4 class="acessibilidade">Você Sabia?</h4>
+
+       <div class="btnsAside">
+         <a href="https://forbes.com.br/outros_destaques/2017/01/conheca-a-fabrica-de-brinquedos-que-planeja-valer-1-bilhao-de-dolares/" target="_blank"> <input class="acessibilidade" type="button" value="Funkos"></a>
+
+         <a href="https://blogechoart.com.br/arte-plastica/do-que-e-como-sao-feitos-os-action-figures/" target="_blank"><input class="acessibilidade" type="button" value="Figures"></a>
+
+         <a href="https://www.tecmundo.com.br/cultura-geek" target="_blank"><input class="acessibilidade" type="button" value="Cutura"></a>
+         
+         <a href="https://www.b9.com.br/126508/funko-cria-linha-de-bonecos-pop-que-homenageia-medicos-e-enfermeiros-na-luta-contra-o-coronavirus/" target="_blank"><input class="acessibilidade" type="button" value="Homenagens"></a>
+         
+       </div>
+     </div>
+
+    </aside>
+
+    <!-- INICIO DA SECTION, ORIENTADA A DIREITA (Djou)-->
+    <section id="containerS">
+
+      <div class="fila">
+        
+          <!-- CAIXA PARA SEPARAÇÃO DOS ITENS DA SECTION TITULO, IMAGEM E DESCRIÇÃO (Djou) -->
+          <div>
+            <h3 class="acessibilidade" >Freddie Mercury</h3>
+            
+            <div class="linha">
+              <img src="img/FreddieMercury.png" alt="">
+
+              <div class="sobreItem">
+                <p class="acessibilidade" >Sobre este item</p>
+                <ul>
+                  <li class="acessibilidade" >Personagem: Freddie Mercury</li>
+                  <li class="acessibilidade" >Possui aproximadamente 10 cm</li>
+                  <li class="acessibilidade" >Figura colecionável produzida pela Funko</li>
+                  <li class="acessibilidade" >Material: Vinil</li>
+                </ul>
+                <div class="comprar">
+                  <p class="acessibilidade">Por: 132,50</p>
+                  <input type="button" value="Comprar">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="acessibilidade" >Slash</h3>
+            <div class="linha">
+            <img src="img/Slash.png" alt="Slash, Guitarrista">
+
+              <div class="sobreItem">
+                <p class="acessibilidade" >Sobre este item</p>
+                <ul>
+                  <li class="acessibilidade">Personagem: Slash</li>
+                  <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+                  <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+                  <li class="acessibilidade">Material: Vinil</li>
+                </ul>
+                <div class="comprar">
+                  <p class="acessibilidade">Por: 179,90</p>
+                  <input type="button" value="Comprar">
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <div class="fila">
+
+        <div>
+          <h3 class="acessibilidade" >Homem Aranha</h3>
+          <div class="linha">
+            <img src="img/HomemAranha.png" alt="Aranha de ferro, Homem Aranha">
+
+            <div class="sobreItem">
+              <p class="acessibilidade" >Sobre este item</p>
+              <ul>
+                <li class="acessibilidade">Personagem: Aranha de Ferro</li>
+                <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+                <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+                <li class="acessibilidade">Material: Vinil</li>
+              </ul>
+              <div class="comprar">
+                <p class="acessibilidade">Por: 240,90</p>
+                <input type="button" value="Comprar">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="acessibilidade" >Homem de Ferro</h3>
+          <div class="linha">
+          <img src="img/HomemDeFerro.png" alt="Homem de Ferro">
+
+            <div class="sobreItem">
+              <p class="acessibilidade" >Sobre este item</p>
+              <ul>
+                <li class="acessibilidade">Personagem: Homem de ferro</li>
+                <li class="acessibilidade">Edição de colecionador, brilha no escuro</li>
+                <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+                <li class="acessibilidade">Material: Vinil</li>
+              </ul>
+              <div class="comprar">
+                <p class="acessibilidade">Por: 289,90</p>
+                <input type="button" value="Comprar">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="fila">
+
+        <div>
+          <h3 class="acessibilidade" >John wick</h3>
+          <div class="linha">
+            <img src="img/johnwick.png" alt="">
+
+            <div class="sobreItem">
+              <p class="acessibilidade" >Sobre este item</p>
+              <ul>
+                <li class="acessibilidade">Personagem: john wick</li>
+                <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+                <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+                <li class="acessibilidade">Material: Vinil</li>
+              </ul>
+              <div class="comprar">
+                <p class="acessibilidade">Por: 164,57</p>
+                <input type="button" value="Comprar">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="acessibilidade" >DeadPool</h3>
+          <div class="linha">
+          <img src="img/DeadPool.png" alt="Deadpool">
+
+            <div class="sobreItem">
+              <p class="acessibilidade" >Sobre este item</p>
+              <ul>
+                <li class="acessibilidade">Personagem: DeadPool de Bob Ross</li>
+                <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+                <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+                <li class="acessibilidade">Material: Vinil</li>
+              </ul>
+              <div class="comprar">
+                <p class="acessibilidade">Por: 189,47</p>
+                <input type="button" value="Comprar">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FIM DO MAIN (Djou)-->
+
+  <!-- INICIO DO FOOTER (Djou)-->
+  <footer id="containerF">
+    
+    <div id="footerOrientação">
+      <div>
+        <h3 class="acessibilidade" >CONTA</h3>
+        <a class="acessibilidade"  href="">Conta</a>
+        <a class="acessibilidade"  href="">Histórico de pedidos</a>
+      </div>
+
+      <div>
+        <h3 class="acessibilidade">ENTRE EM CONTATO</h3>
+        <a href="" class="acessibilidade">Contatos</a>
+        <a href="" class="acessibilidade">Redes sociais</a>
+      </div>
+
+      <div>
+        <h3 class="acessibilidade" >FUNCIONÁRIOS</h3>
+        <a class="acessibilidade"  href="intranet.html">Intranet</a>
+      </div>
+    </div>
+
+    <!-- DIREITOS AUTORAIS DE PROPRIEDADE ARTISTICA DO SITE (Djou)-->
+    <small>&copy; Copyright 2021, Todos os direitos reservados</small>
+
+  </footer>
+
+
+  <!-- VLIBRAS (Djou)-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <!-- JS DO VLIBRAS -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- FIM DO VLIBRAS (Djou)-->
+
+  <!-- SCRIPT COM A LOGICA DA PAGINA (Djou)-->
+  <script src="js/script.js"></script>
+  <!-- SCRIPT COM O CARROSSEL DE IMAGENS. O CODIGO DO CARROSSEL ENTROU EM CONFLITO COM O CODIGO BASE DA PAGINA (Djou) -->
+  <script src="js/carrossel.js"></script>
+
+  <!-- SCRIPT DO FORMULARIO -->
+  <script src="js/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,960 @@
+
+/* RESPONSIVIDADE (Djou)*/
+@media (max-width: 320px){
+
+  /* HEADER (Djou)*/
+  #logo{
+    width: 80px;
+  }
+
+
+  #nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #btn{
+    top: 11%;
+    right: 5%;
+  }
+
+  #menu ul{
+    top:18%;
+    right: 0;
+  
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #busca button img{
+    right: 32%;
+    top: 8%;
+    
+    width: .8em;
+  
+  }
+
+   /* CARROSSEL (Djou)*/
+  
+
+  #img{
+    gap: 1300px;
+  }
+
+  #img img{
+    width: 300px;
+    height: 100px;
+  }
+
+  /* MAIN (Djou)*/
+  #containerM{
+    flex-direction: column;
+  }
+
+  #containerA{
+    margin-left: 5px;
+    width: 97%;
+    height: 350px;
+    display: flex;
+    font-size: .6em;
+  }
+  
+  #containerA div{
+    height: 350px;
+    padding: 15px;
+    margin-left: 5px;
+  }
+
+    
+  #containerA .btnsAside{
+    margin-top: 10px;
+  }
+
+  #containerA .btnsAside input{
+    width: 80px;
+    height: 40px;
+    padding: 0;
+  }
+
+  #containerS{
+    margin-left: 5px;
+    width: 97%;
+    height: 3400px
+  }
+  
+  .fila{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .fila div{
+    width: 250px;
+    height: 350px;
+    margin-left: 20px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fila .sobreItem{
+    height: 330px;
+  }
+
+
+  /* FOOTER (Djou)*/
+  #containerF{
+    height: 500px;
+  }
+
+  #footerOrientação{
+    flex-direction: column;
+  }
+
+
+  /* PAGINA SOBRE (Djou)*/
+#sobre1{
+  flex-direction: column;
+  height: 750px;
+  justify-content: start;
+
+}
+
+#sobre1 div{
+  width: 300px;
+  height: 200vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+.sobre1img{
+  width: 70vw;
+  height: 50vw;
+}
+
+
+#cultura{
+  flex-direction: column;
+  height: 1000px;
+  margin-top: 372px;
+}
+
+#cultura div{
+  width: 300px;
+  height: 100vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+#sobre2{
+  grid-template-columns: 1fr;
+}
+
+#sobre2 div{
+  width: 300px;
+  height: 100vh;
+}
+
+#sobre2 img{
+  width: 80px;
+  height: 110px;
+  float: none;
+}
+
+#sobre2 p{
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+
+
+/* PAGINA LOJA (Djou)*/
+#containerLoja{
+  flex-direction: column;
+}
+
+#loja{
+  width: 94%;
+  height: 1300px;
+  
+  padding: 20px;
+}
+
+
+#categoria1{
+  height: 500px;
+}
+
+#secao1{
+  flex-direction: column;
+  gap: 80px;
+
+  margin-top: 30px;
+}
+
+#categoria2{
+  height: 500px;
+}
+
+#secao2{
+  flex-direction: column;
+  gap: 80px;
+  
+  margin-top: 50px;
+}
+
+#lateral{
+  width: 96%;
+  margin-left: 8px;
+}
+
+/* MAIN DA LOJA */
+#loja{
+  height: 2850px;
+}
+
+#promo button{
+  margin: 30px 10px;
+}
+
+#promo p{
+  width: 250px;
+}
+
+
+}
+
+
+
+@media (max-width: 360px) and (min-width: 321px){
+
+  /* HEADER (Djou)*/
+  #logo{
+    width: 100px;
+  }
+
+
+  #nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #btn{
+    top: 10%;
+    right: 5%;
+  }
+
+  #menu ul{
+    top:15%;
+    right: 0;
+  
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #entrar{
+    margin-left: 10px;
+  }
+
+  #busca button img{
+    position: absolute;
+    right: 25%;
+    top: 6.4%;
+    
+    width: 1em;
+  
+  }
+
+   /* CARROSSEL (Djou)*/
+   /* #btnCarrossel{
+    top: 30%;
+    left: 44%;
+  } */
+
+  #img{
+    gap: 1250px;
+  }
+
+  #img img{
+    width: 300px;
+    height: 120px;
+  }
+
+   /* MAIN (Djou)*/
+   #containerM{
+    flex-direction: column;
+  }
+
+  #containerA{
+    margin-left: 5px;
+    width: 97%;
+    height: 300px;
+
+    display: flex;
+    font-size: .6em;
+  }
+
+  #containerA div{
+    height: 350px;
+    margin-left: 8px;
+    padding: 10px;
+  }
+
+  #containerA .btnsAside{
+    margin-top: 10px;
+  }
+
+  #containerA .btnsAside input{
+    width: 100px;
+    height: 40px;
+    padding: 0;
+  }
+
+  #containerS{
+    margin-left: 5px;
+    width: 97%;
+    height: 3100px
+  }
+  
+  .fila{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fila div{
+    width: 300px;
+    height: 300px;
+    margin-left: 5px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .fila .sobreItem{
+    height: 280px;
+  }
+
+  /* FOOTER (Djou)*/
+  #containerF{
+    height: 500px;
+  }
+
+  #footerOrientação{
+    flex-direction: column;
+  }
+
+
+  
+ /* PAGINA SOBRE (Djou)*/
+ #sobre1{
+  flex-direction: column;
+  height: 755px;
+  justify-content: start;
+
+}
+
+#sobre1 div{
+  width: 340px;
+  height: 200vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+.sobre1img{
+  width: 70vw;
+  height: 50vw;
+}
+
+#cultura{
+  flex-direction: column;
+  height: 1000px;
+  margin-top: 260px;
+}
+
+#cultura div{
+  width: 340px;
+  height: 100vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+#sobre2{
+  grid-template-columns: 1fr;
+}
+
+#sobre2 div{
+  width: 340px;
+  height: 80vh;
+}
+
+#sobre2 img{
+  width: 150px;
+  height: 170px;
+  float: none;
+}
+
+#sobre2 p{
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+
+/* PAGINA LOJA (Djou)*/
+#containerLoja{
+  flex-direction: column;
+}
+
+#loja{
+  width: 94%;
+  height: 1300px;
+  
+  padding: 20px;
+}
+
+
+#categoria1{
+  height: 500px;
+}
+
+#secao1{
+  flex-direction: column;
+  gap: 80px;
+
+  margin-top: 30px;
+}
+
+#categoria2{
+  height: 500px;
+}
+
+#secao2{
+  flex-direction: column;
+  gap: 80px;
+  
+  margin-top: 50px;
+}
+
+.container{
+  right: 45px;
+}
+
+#lateral{
+  width: 96%;
+  margin-left: 8px;
+}
+
+/* MAIN DA LOJA */
+#loja{
+  height: 2780px;
+}
+
+#promo button{
+  margin: 30px 10px;
+}
+
+#promo p{
+  width: 250px;
+}
+
+  /*MODAL DO FORMULÁRIO (ALANA E BERNARDO)*/
+  .modal span{
+    bottom: 60rem;
+    color: rgb(255, 0, 0);
+  }
+
+  fieldset{
+    border: none;
+    font-size: 14px;
+    align-items: center;
+    
+  }
+
+
+}
+
+
+@media (max-width: 650px) and (min-width: 361px){
+
+  
+  /* HEADER (Djou)*/
+  #logo{
+    width: 110px;
+  }
+
+
+  #nav{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #btn{
+    top: 11%;
+    right: 6%;
+  }
+
+
+  #menu ul{
+    top:18%;
+    right: 0;
+  
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #busca button img{
+    right: 30%;
+    top: 7.7%;
+    
+    width: 1em;
+  
+  }
+
+  /* CARROSSEL (Djou)*/
+  /* #btnCarrossel{
+    top: 37%;
+    left: 44%;
+  } */
+
+  #img{
+    gap: 1250px;
+  }
+
+  #img img{
+    width: 300px;
+    height: 120px;
+  }
+
+   /* MAIN (Djou)*/
+   #containerM{
+    flex-direction: column;
+  }
+
+  #containerA{
+    margin-left: 5px;
+    width: 97%;
+    height: 350px;
+
+    display: flex;
+    font-size: .8em;
+  }
+
+  #containerA div{
+    height: 350px;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+    
+  #containerA .btnsAside{
+    margin-top: 15px;
+  }
+
+  #containerA .btnsAside input{
+    width: 100px;
+    height: 40px;
+    padding: 0;
+  }
+
+  #containerS{
+    margin-left: 5px;
+    width: 97%;
+    height: 3100px
+  }
+  
+  .fila{
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+  }
+
+  .fila div{
+    width: 300px;
+    height: 450px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fila .sobreItem{
+    height: 280px;
+  }
+
+  /* FOOTER (Djou)*/
+  #containerF{
+    height: 500px;
+  }
+
+  #footerOrientação{
+    flex-direction: column;
+  }
+
+
+/* PAGINA SOBRE (Djou)*/
+#sobre1{
+  flex-direction: column;
+  height: 700px;
+  justify-content: start;
+
+}
+
+#sobre1 div{
+  width: 355px;
+  height: 200vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+.sobre1img{
+  width: 70vw;
+  height: 50vw;
+}
+
+#cultura{
+  flex-direction: column;
+  height: 1000px;
+  margin-top: 298px;
+}
+
+#cultura div{
+  width: 355px;
+  height: 100vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+#sobre2{
+  grid-template-columns: 1fr;
+}
+
+#sobre2 div{
+  width: 355px;
+  height: 100vh;
+}
+
+#sobre2 img{
+  width: 150px;
+  height: 170px;
+  float: none;
+}
+
+#sobre2 p{
+  margin-top: 5px;
+  margin-left: 0;
+}
+
+
+/* PAGINA LOJA (Djou)*/
+#containerLoja{
+  flex-direction: column;
+}
+
+#loja{
+  width: 94%;
+  height: 1300px;
+  
+  padding: 20px;
+}
+
+
+#categoria1{
+  height: 500px;
+}
+
+#secao1{
+  flex-direction: column;
+  gap: 80px;
+
+  margin-top: 30px;
+}
+
+#categoria2{
+  height: 500px;
+}
+
+#secao2{
+  flex-direction: column;
+  gap: 80px;
+  
+  margin-top: 50px;
+}
+
+.container{
+  right: 55px;
+}
+
+#lateral{
+  width: 96%;
+  margin-left: 8px;
+}
+
+/* MAIN DA LOJA */
+#loja{
+  height: 2750px;
+}
+
+#promo button{
+  margin: 30px 10px;
+}
+
+#promo p{
+  width: 250px;
+}
+
+/*MODAL DO FORMULÁRIO (ALANA E BERNARDO)*/
+.modal span{
+  bottom: 62rem;
+}
+
+}
+
+
+
+@media (max-width: 800px) and (min-width: 651px){
+
+  /* HEADER (Djou)*/
+  #logo{
+    width: 150px;
+  }
+
+
+  #nav{
+    display: flex;
+  }
+
+  #btn{
+    top: 7%;
+    right: 2%;
+  }
+
+
+  #menu ul{
+    top:13%;
+    right: 0;
+  
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #busca button img{
+    right: 30%;
+    top: 5.5%;
+    
+    width: 1em;
+  
+  }
+
+  /* CARROSSEL(Djou)*/
+  /* #btnCarrossel{
+    top: 56%;
+  } */
+
+  #img{
+    gap: 1100px;
+  }
+
+  #img img{
+    width: 400px;
+    height: 200px;
+  }
+  
+
+   /* MAIN (Djou)*/
+   #containerM{
+    flex-direction: column;
+  }
+
+  #containerA{
+    margin-left: 5px;
+    width: 98.3%;
+    height: 400px;
+  }
+
+  #containerA div{
+    height: 70px;
+    margin-bottom: 120px;
+  }
+
+    
+  #containerA .btnsAside{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  }
+
+#containerA .btnsAside input{
+  width: 150px;
+}
+
+
+  #containerS{
+    margin-left: 5px;
+    width: 98.4%;
+    height: 2000px
+  }
+
+  .fila{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+  }
+  
+
+
+  /* FOOTER (Djou)*/
+  #containerF{
+    height: 500px;
+  }
+
+  #footerOrientação{
+    flex-direction: column;
+  }
+
+
+
+/* PAGINA SOBRE (Djou)*/
+#sobre1{
+  flex-direction: column;
+  height: 700px;
+  justify-content: start;
+  margin-top: -0.5px;
+}
+
+#sobre1 div{
+  width: 750px;
+  height: 200vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+.sobre1img{
+  width: 50vw;
+  height: 30vw;
+}
+
+#cultura{
+  flex-direction: column;
+  height: 1000px;
+  margin-top: 15px;
+}
+
+#cultura div{
+  width: 750px;
+  height: 100vh;
+
+  margin-top: 10px;
+  margin-left: 10px; 
+}
+
+#sobre2{
+  grid-template-columns: 1fr;
+}
+
+#sobre2 div{
+  width: 750px;
+  height: 70vh;
+}
+
+#sobre2 img{
+  width: 200px;
+  height: 260px;
+}
+
+#sobre2 p{
+  margin-top: 75px;
+  margin-left: 200px;
+}
+
+
+/* PAGINA LOJA (Djou)*/
+#containerLoja{
+  flex-direction: column;
+}
+
+#loja{
+  width: 97%;
+  height: 1300px;
+  
+  padding: 20px;
+}
+
+
+#categoria1{
+  height: 500px;
+}
+
+#secao1{
+  flex-direction: column;
+  gap: 80px;
+
+  margin-top: 30px;
+}
+
+#categoria2{
+  height: 500px;
+}
+
+#secao2{
+  flex-direction: column;
+  gap: 80px;
+  
+  margin-top: 50px;
+}
+
+.container{
+  right: 235px;
+}
+
+#lateral{
+  width: 98.2%;
+  margin-left: 8px;
+}
+
+/* MAIN DA LOJA */
+#loja{
+  height: 2700px;
+}
+
+#promo{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+#promo button{
+  margin-top: 30px;
+  margin-left: 110px;
+}
+
+#promo p{
+  width: 250px;
+  margin-right: 230px;
+}
+
+  /*MODAL DO FORMULÁRIO (ALANA E BERNARDO)*/
+  .modal span{
+    bottom: 60rem;
+  }
+
+}
+
+
+/*MODAL DO FORMULÁRIO DE INSCRIÇÃO (ALANA E BERNARDO*/
+
+@media screen and (max-width: 1000px){
+
+  #form input{
+      margin-bottom: 1rem;
+    }
+
+
+}
+
+  

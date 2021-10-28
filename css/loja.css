@@ -1,0 +1,545 @@
+/* RESETE */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+
+html{
+  background-color: #5C7AEA;
+}
+
+textarea, input, button{
+  border: 0;
+  outline: none;
+}
+/* FIM DO RESETE */
+
+
+
+
+
+
+/* HEADER / NAV */
+#containerH{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  height: 100px;
+  
+  background-color: #3D56B2;
+}
+
+#nav{
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+#logo{
+  width: 150px;
+}
+
+#busca{
+  display: flex;
+  gap: 10px;
+}
+
+#busca input{
+  width: 30vw;
+  height: 30px;
+  font-size: 1rem;
+
+  border-radius: 10px;
+}
+
+#busca button{
+  background-color: #3D56B2;
+  cursor: pointer;
+}
+
+#busca button img{
+  width: 20px;
+}
+
+
+#entrar{
+  color: #E6E6E6;
+  cursor: pointer;
+  text-align: center;
+
+  width: 60px;
+  height: 20px;
+  font-size: 1rem;
+}
+
+#btn{
+  position: absolute;
+  top: 6%;
+
+  width: 60px;
+  height: 25px;
+
+  background-color: #C49D21;
+  color: #E6E6E6;
+  text-shadow: 1px 1px #3D56B2;
+  box-shadow: 2px 2px 0px 1px rgb(75, 74, 73);
+
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#btn:hover{
+  background-color: #cfa51b;
+}
+
+#btn:active{
+  box-shadow: 0px 0px 0px 0px rgb(75, 74, 73), inset 3px 3px 3px rgb(75, 74, 73);
+  transform: translate(3px, 3px);
+}
+
+
+#menu ul{
+  display: none;
+  position: absolute;
+  top: 7vw;
+  right: 3vw;
+
+  width: 15vw;
+  height: 30vw;
+
+  border-radius: 5px;
+  text-align: center;
+  background-color: #3d56b2c0;
+
+  z-index: 100;
+}
+
+
+#menu li{
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 4px;
+  width: 96%;
+  border-radius: 5px;
+
+}
+
+#menu li:hover{
+  border-bottom: 1.5px solid #cfa51b;
+  background-color: #5C7AEA;
+  transition: 1s ease background-color;
+
+}
+
+#menu li a{
+  font-size: 1rem;
+  color: #E6E6E6;
+  padding: 10px 40px;
+}
+/* FIM DO HEADER */
+
+
+/* ACESSIBILIDADE / ZOOM */
+.zoom{
+  position: fixed;
+  /* justify-content: center; */
+  width: 70px;
+  height: 30px;
+  margin-top: 20rem;
+  left: 0;
+  /* gap: 1rem; */
+}
+
+.zoom button{
+  font-weight: bold;
+  padding: .2rem;
+  color: #E6E6E6;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #14279B;
+  box-shadow: 1px 1px 10px #5C7AEA;
+
+  margin-top: 10px;
+}
+
+
+/* MAIN DA LOJA */
+#containerLoja{
+  display: flex;
+  width: 100%;
+}
+
+
+
+#loja{
+  width: 80%;
+  height: 1000px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  background-color: #E6E6E6;
+  text-align: center;
+}
+
+#tituloLoja{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #14279B;
+  font-size: 3rem;
+  font-weight: bolder;
+  
+}
+
+#categoria1{
+  width: 100%;
+  height: 420px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+#categoria1 img{
+  width: 230px;
+  height: 180px;
+  border-radius: 20px;
+  border: none;
+}
+
+#categoria1 p{
+  text-align: center;
+  
+}
+
+
+#secao1{
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 50px;
+}
+
+
+#secao1 div p{
+  color: #14279B;
+  font-weight: bold;
+  font-size: large;
+  
+  
+}
+
+/* BOTAO HUGO */
+
+.adicionar{
+  width: 100px;
+  height: 40px ;
+   background-color: #C49D21;
+   margin-top: 6px;
+  color: #E6E6E6;
+  text-shadow: 1px 1px #3D56B2;
+  box-shadow: 2px 2px 0px 1px rgb(75, 74, 73);
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* BOTAO HUGO */
+.remover{
+  width: 30px;
+  height: 20px ;
+   background-color: #C49D21;
+   margin-top: 6px;
+  color: #E6E6E6;
+  text-shadow: 1px 1px #3D56B2;
+  box-shadow: 2px 2px 0px 1px rgb(75, 74, 73);
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+
+
+/* HUGO */
+#loja div h2{
+  color: #C49D21;
+  font-weight: bolder;
+  font-size:30px;
+    
+}
+
+
+
+#categoria2{
+  width: 100%;
+  height: 420px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+/* HUGO */
+#categoria2 img{
+  width: 230px;
+  height: 180px;
+  border-radius: 20px;
+  border: none;
+}
+
+#secao2{
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 50px;
+}
+
+/* HUGO */
+#secao2 div p{
+  color: #14279B;
+  font-weight: bold;
+  font-size: large;
+  
+}
+
+
+#lateral{
+  width: 18%;
+}
+
+/* HUGO */
+#promo button{
+   width: 100px;
+  height: 50px ;
+   background-color: #C49D21;
+   margin-top: 6px;
+  color: #E6E6E6;
+  text-shadow: 1px 1px #3D56B2;
+  box-shadow: 2px 2px 0px 1px rgb(75, 74, 73);
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* HUGO */
+#promo p{
+  background-color: #14279B;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  position: absolute;
+  right: 50px;
+  z-index: 100;
+  text-align: center;
+}
+
+/* HUGO */
+#promo{
+  width: 99%;
+  height: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #3D56B2;
+  text-align: center;
+}
+
+
+
+/* FIM DO MAIN */
+
+
+/* FOOTER */
+#containerF{
+  background-color: #3D56B2;
+  padding: 10px;
+  margin-top: 10px;
+  height: 200px;
+
+  text-align: center;
+}
+
+#footerOrientação{
+  display: flex;
+  justify-content: space-around;
+}
+
+#footerOrientação div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+#footerOrientação div h3{
+  color: #C49D21;
+}
+
+#footerOrientação div a{
+  color: #E6E6E6;
+}
+/* FIM DO FOOTER */
+
+
+
+/* CALCULADORA */
+#calc{
+  width: 99%;
+  height: 490px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #14279B;
+  text-align: center;
+}
+
+/* CALCULADORA DO HUGO */
+#btnCalc{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#calc h3{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px; 
+  color: #E6E6E6;
+}
+
+#textCalc{
+  color: #E6E6E6;
+}
+
+#textCalc h3{
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#textCalc p{
+  text-align: center;
+  
+  padding: 5px;
+}
+
+#mostrar{
+  background-color: #14279B;
+  color: #E6E6E6;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #E6E6E6;
+  box-shadow: 4px 4px 4px #909090;
+  
+}
+
+#normal{
+  background-color: #14279B;
+  color: #E6E6E6;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #E6E6E6;
+  box-shadow: 4px 4px 4px #909090;
+}
+
+
+#cientifica{
+  background-color: #14279B;
+  color: #E6E6E6;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #E6E6E6;
+  box-shadow: 4px 4px 4px #909090;
+}
+
+.container{
+  position: absolute;
+  right: 25px;
+  margin: 0 auto;
+  width: 270px;
+  height: auto;
+  padding: 5px;
+  background: #E6E6E6;
+  border: 1px solid #E6E6E6;
+  box-shadow: 4px 4px 4px #909090;
+}
+
+.top{
+  position: relative;
+  width: 97%;
+  height: 48px;
+  padding: 6px;
+  background: #3D56B2;
+
+}
+
+.campo{
+  width: 100%;
+  height: 45px;
+  border: none;
+  color: white;
+ 
+  background-color: #5C7AEA;
+  font-size: 2.5rem;
+  text-align: right;
+}
+
+.body{
+  margin-top: 10px;
+  width: 95%;
+  height: auto;
+  padding: 10px;
+  background: #dedede;
+}
+
+
+
+.btn{
+margin-top: 4px;
+width: 40px;
+height: 37px;
+background: #14279B;
+color: #fff;
+cursor: pointer;
+box-shadow: 2px 2px 2px 2px white;
+border: none;
+font-size: 2rem;
+
+}
+
+.zero{
+  width: 130px;
+}
+
+.igual{
+  background-color: #5C7AEA;;
+}
+
+#op{
+  position: absolute;
+  z-index: 50;
+  margin: 15px 10px;
+  font-weight: bold;
+  color: white;
+}

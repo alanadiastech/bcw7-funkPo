@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funk Pô</title>
+
+   <!-- SCRIPT DO JQUERY -->
+   <script src="js/jquery.js"></script>
+
+   <!-- SCRIPT DA PAGINA -->
+   <script src="js/script.js"></script>
+ 
+   <!-- FONTES DO SITE -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+   <!-- ICONE DA BARRA DE NAVEGAÇÃO --> 
+     <link rel="shortcut icon" type="imagex/png" href="ico/favicon.png">
+     <!-- CSS DA PAGINA -->
+   <link rel="stylesheet" href="css/loja.css">
+   <!--  CSS RESPONSIVO -->
+   <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <!-- INICIO DO HEADER / NAV -->
+  <header id="containerH">
+   <a href="index.html"> <img id="logo" src="img/Logo.png" alt="Funk Pô"> </a>
+
+    <div id="busca">
+      <input type="text" id="barraBusca"  value=" Buscar...">
+      
+      <button type="submit"> 
+      <img src="ico/busca.png" alt="Icone de busca">
+      </button>
+    </div>  
+
+    <nav id="nav">
+      <!-- <a class="acessibilidade" id="entrar" href="">Entrar</a> -->
+
+      <div id="menu"> 
+        <input id="btn" type="button" value="Menu" class="acessibilidade">
+        <ul >
+          <li><a class="acessibilidade" href="index.html">Home</a></li>
+          <li><a class="acessibilidade" href="sobre.html">Sobre</a></li>
+          <li><a class="acessibilidade" href="loja.html">Funko Pop!</a></li>
+          <li><a class="acessibilidade" href="loja.html#categoria1">Promoções</a></li>
+          <li><a class="acessibilidade" href="loja.html#categoria2">Premium</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- FIM DO HEADER / NAV -->
+
+  <!-- BOTÕES DE ZOOM -->
+  <div class="zoom">
+    <button class="zoom1" onclick="fonte('a')">ZOOM +</button>
+    <button class="zoom1" onclick="fonte('d')">ZOOM -</button>
+  </div>
+  <!-- FIM DO ZOOM -->
+
+  <!-- HUGO -->
+  <!-- MAIN DA LOJA -->
+  <main id="containerLoja">
+    <section id="loja">
+      <h2 class="acessibilidade" id="tituloLoja">Funk Sale!</h2>
+
+      <div id="categoria1">
+        <h2 class="acessibilidade" >Promoções</h2>
+        <div id="secao1">
+          <div>
+            <h3 class="acessibilidade" >Iron Man "Endgame"</h3>
+            <img src="img/homemDeFerro.png" alt="">
+            <ul>
+              <li class="acessibilidade">Personagem: Iron Man</li>
+              <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+              <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+              <li class="acessibilidade">Material: Vinil</li>
+            </ul>
+            <!-- <p>Por: 125,00 R$</p> -->
+            <input type="button" class="adicionar" value="289.90 R$" name="adicionar"></input> 
+           <input type="button" class="remover" name="remover" value="-" > </input>
+          </div>
+          <div>
+            <h3 class="acessibilidade" >Darth Vader</h3>
+            <img src="img/darthVader.png" alt="">
+            <ul>
+              <li class="acessibilidade">Personagem: Darth Vader</li>
+              <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+              <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+              <li class="acessibilidade">Material: Vinil</li>
+            </ul>
+            <!-- <p>Por: 150,00 R$</p> -->
+            <input type="button" class="adicionar" value="150 R$" name="adicionar"></input> 
+            <input type="button" class="remover" name="remover" value="-" > </input>
+          </div>
+          <div>
+            <h3 class="acessibilidade" >Naruto Shippunden</h3>
+            <img src="img/naruto.png" alt="">
+            <ul>
+              <li class="acessibilidade">Personagem: Naruto Shippunden</li>
+              <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+              <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+              <li class="acessibilidade">Material: Vinil</li>
+            </ul>
+            <!-- <p>Por: 80,00 R$</p> -->
+            <input type="button" class="adicionar" value="80 R$" name="adicionar"></input> 
+            <input type="button" class="remover" name="remover" value="-" > </input>
+        </div>
+      </div>
+
+
+
+<!-- CATEGORIA PREMIUM -->
+
+<!-- HUGO -->
+      <div id="categoria2">
+        <h2 class="acessibilidade" >Categoria Premium</h2>
+        <div id="secao2">
+          <div>
+            <h3 class="acessibilidade" >Kratos Edição Especial</h3>
+            <img src="img/kratos.png" alt=""> 
+           
+            <ul>
+              <li class="acessibilidade">Personagem: Kratos</li>
+              <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+              <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+              <li class="acessibilidade">Material: Vinil</li>
+            </ul>
+            <!-- <p>Por: 400,00 R$</p> -->
+            <input type="button" class="adicionar" value="400 R$" name="adicionar"></input> 
+            <input type="button" class="remover" name="remover" value="-" > </input>
+
+
+<!-- HUGO -->
+
+          </div>
+          <div>
+            <h3 class="acessibilidade" >Chaves</h3>
+            <img src="img/chaves.png" alt="">
+            <ul>
+              <li class="acessibilidade">Personagem: Chaves</li>
+              <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+              <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+              <li class="acessibilidade">Material: Vinil</li>
+            </ul>
+            <!-- <p>Por: 800,00 R$</p> -->
+            <input type="button" class="adicionar" value="800 R$" name="adicionar"></input> 
+            <input type="button" class="remover" name="remover" value="-" > </input>
+          </div>
+          <div>
+            <h3 class="acessibilidade" >Ice Cube</h3>
+            <img src="img/ice cube.png" alt="">
+            <ul>
+              <li class="acessibilidade">Personagem: Ice Cube</li>
+              <li class="acessibilidade">Possui aproximadamente 10 cm</li>
+              <li class="acessibilidade">Figura colecionável produzida pela Funko</li>
+              <li class="acessibilidade">Material: Vinil</li>
+            </ul>
+            <!-- <p>Por: 500,00 R$</p> -->
+            <input type="button" class="adicionar" value="500 R$" name="adicionar"></input> 
+            <input type="button" class="remover" name="remover" value="-" > </input>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HUGO -->
+    <div id="lateral">
+      <section id="promo">
+
+
+        <button class="botaoaside1 acessibilidade" > Você Sabia?
+          <p id="promocao" class="acessibilidade"> Segue abaixo informações sobre nossos funkos pop </p>
+        </button>
+
+
+        <button class="botaoaside2 acessibilidade" > História
+        <p id="historia" class="acessibilidade" > Foi a empresa Funko que, em 2010, lançou na New York Comic Con a série Pop! Vinyl com os seus primeiros personagens: Batman, Batgirl, Lanterna Verde e Coringa. Hoje, a empresa faz tanto sucesso que já é autorizada por mais de 175 grandes marcas como Marvel, HBO, Disney, Warner, AMC e WarnerBros a usar mais de 10.000 personagens para poderem transformá-los em bonecos.    </p>
+      </button>
+
+
+
+
+        <button class="botaoaside3 acessibilidade"  > MARVEL
+          <p id="marvel" class="acessibilidade"> a Marvel Comics é uma editora norte-americana de mídias relacionadas. Hoje a Marvel Comics é considerada a maior editora de histórias em quadrinhos do mundo. </p>
+        </button>
+
+
+
+
+        <button class="botaoaside4 acessibilidade"  > Star Wars
+          <p id="starwars" class="acessibilidade"> É uma franquia do tipo space opera estadunidense criada pelo cineasta George Lucas, que conta com uma série de nove filmes de fantasia científica e dois spin-offs. </p>
+        </button>
+
+
+
+
+        <button class="botaoaside5 acessibilidade"  > Naruto
+          <p id="naruto" class="acessibilidade">  É uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento e sonha em se tornar Hokage, o ninja líder de sua vila.    </p>
+
+        </button>
+
+
+
+        <button class="botaoaside6 acessibilidade" > Kratos
+          <p id="kratos" class="acessibilidade">Kratos é um personagem de jogos eletrônicos da franquia God of War, da Santa Monica Studio, que é baseado nas mitologias grega e nórdica.   </p>
+
+        </button>
+
+
+        <button class="botaoaside7 acessibilidade"  > Chaves
+          <p id="chaves" class="acessibilidade">Acompanhe o dia a dia de Chaves, um menino pobre que passa sua infância em uma pequena vila ao lado de seus amigos, Chiquinha e Kiko. Ele cria complicações para os adultos Seu Madruga, Seu Barriga, Professor Girafales, Dona Florinda e a Bruxa do 71.  </p>
+
+        </button>
+
+
+        <button class="botaoaside8 acessibilidade"  > Ice Cube
+          <p id="icecube" class="acessibilidade">  É um rapper, produtor musical, ator, escritor, comediante, produtor cinematográfico e diretor norte-americano. Ele iniciou sua carreira em 1984 como membro do grupo C.I.A. e depois entrou para o grupo de gangsta rap N.W.A em 1986. </p>
+
+
+        </button>
+        
+      </section>
+
+      <aside id="calc">
+        <h3 class="acessibilidade" >Calculadora</h3>
+
+        <div id="btnCalc">
+          <button class="acessibilidade"  id="normal">Normal</button>
+          <button class="acessibilidade"  id="cientifica">Cient</button>
+          <!-- <button id="mostrar">Abrir</button> -->
+          <input type="button" id="mostrar" value="Abrir">
+        </div>
+
+
+        <!-- DIV COM INFORMAÇÕES SOBRE A CALCULADORA -->
+        <div id="textCalc">
+          <h3 class="acessibilidade" >Calcule seus descontos</h3>
+
+          <p class="acessibilidade" >Essa calculadora vai te ajudar a manter suas compras controladas, use-a sem moderação!</p>
+        </div>
+
+    <div class="container">
+
+        <header class="top">
+            <form class="form">
+                <label id="op"> </label>
+                <input type="text" id="result" class="campo"> </input>
+
+            </form>
+
+        </header>
+
+
+        <section class="body">
+            <input type="button" value="7" name="btn" class="btn"> </input>
+            <input type="button" value="8" name="btn" class="btn"> </input>
+            <input type="button" value="9" name="btn" class="btn"> </input>
+            <input type="button" value="+" name="soma" class="btn"> </input>
+            <input type="button" value="C" name="C" class="btn"> </input>
+            <input type="button" value="4" name="btn" class="btn"> </input>
+            <input type="button" value="5" name="btn" class="btn"> </input>
+            <input type="button" value="6" name="btn" class="btn"> </input>
+            <input type="button" value="-" name="subtrair" class="btn"> </input>
+            <input type="button" value="CE" name="CE" class="btn"> </input>
+            <input type="button" value="1" name="btn" class="btn"> </input>
+            <input type="button" value="2" name="btn" class="btn"> </input>
+            <input type="button" value="3" name="btn" class="btn"> </input>
+            <input type="button" value="*" name="multiplicar" class="btn"> </input>
+            <input type="button" value="=" name="igual" class="btn igual"> </input>
+
+
+
+            <input type="button" value="0" name="btn" class="btn zero"> </input>
+            <input type="button" value="." name="btn" class="btn"> </input>
+            <input type="button" value="/" name="dividir" class="btn"> </input>
+            <p></p>
+            <input type="button" value="√x" name="raiz" class="btn"> </input>
+            <input type="button" value="x²" name="elevado2" class="btn"> </input>
+            <input type="button" value="x³" name="elevado3" class="btn"> </input>
+
+        </section>
+
+    </div>
+      </aside>
+    </div>
+    
+  </main>
+
+
+  <!-- INICIO DO FOOTER -->
+  <footer id="containerF">
+    
+    <div id="footerOrientação">
+      <div>
+        <h3 class="acessibilidade" >CONTA</h3>
+        <a class="acessibilidade"  href="">Conta</a>
+        <a class="acessibilidade"  href="">Histórico de pedidos</a>
+      </div>
+
+      <div>
+        <h3 class="acessibilidade" >ENTRE EM CONTATO</h3>
+        <a class="acessibilidade"  href="">Contatos</a>
+        <a class="acessibilidade"  href="">Redes sociais</a>
+      </div>
+
+      <div>
+        <h3 class="acessibilidade" >FUNCIONÁRIOS</h3>
+        <a class="acessibilidade"  href="intranet.html">Intranet</a>
+      </div>
+    </div>
+
+    <!-- DIREITOS AUTORAIS DE PROPRIEDADE ARTISTICA DO SITE -->
+    <small>&copy; Copyright 2021, Todos os direitos reservados</small>
+
+  </footer>
+
+
+  <!-- VLIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <!-- JS DO VLIBRAS -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- FIM DO VLIBRAS -->
+
+  
+  <script src="js/script.js"></script>
+  <script src="js/calculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/intranet.css">
+  <link rel="icon" type="/imagem/png" href="ico/favicon.png" />
+   <!--FONTES-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+   <!--JQUERY-->
+  <script src="js/jquery.js"></script>
+
+  <title>Intranet - FunkPô</title>
+</head> <!--ALANA-->
+<body class="acessibilidade">
+  <!-- #dialog é o id do DIV definido como mostrado a seguir  -->
+  <a href="#dialog" name="modal" class="modal">INFORMAÇÕES!</a>
+  <div id="boxes">
+<!-- #personalize sua janela modal aqui -->
+    <div id="dialog" class="window">
+      <b>Olá!</b>
+<!-- Botão para fechar a janela tem class="close" -->
+      <a href="#" class="close">Fechar [X]</a>
+<!--Sempre adicionar os avisos nesse parágrafo-->
+      <p>A Atenção para essas ações é essêncial. Durante o período de 01/10/20201 a 30/10/2021, estaremos avaliando a atuação para aplicação do próximo treinamento. Bom trabalho!</p>
+<!-- Não remova o div#mask, pois ele é necessário para preencher toda a janela -->
+    </div>         
+        <div id="mask"></div>
+  </div>
+  <header id="header">
+    <section class="logo">
+     <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+    </section><!--LOGO-->
+    <!--FORM DE BUSCA-->
+    <form id="pesquisa">
+      <input id="busca" type="search" name="" placeholder="  Buscar...">
+      <button id="btn-pesquisa" type="submit">Enviar</button>
+    </form>
+    <input type="button" name="login" id="login" value="Login"> 
+    <!--BOTÕES DE ZOOM-->
+    <div class="zoom">
+      <button class= "zoom1" onClick="fonte('a');">ZOOM +</button>
+      <button class= "zoom1" onClick="fonte('d');">ZOOM -</button>
+    </div><!--ZOOM-->
+  </header><!--HEADER-->
+  <main><!--MAIN-->
+    <!--CALCULADORA-->
+      <section class = "titulo">
+          <h2>Cadastro Produtos FunkPô</h2>
+          <span>CALCULADORA</span>
+          <button id="mostrar"> ABRIR </button>
+          <button id="normal"> NORMAL </button>
+          <button id="cientifica">CIENTIFICA</button>
+          <br>
+          <br>
+          <br>
+          <div class="container">
+              <div class="top">
+                  <form class="form">
+                      <label id="op"> </label>
+                      <input type="text" id="result" class="campo"> </input>
+                  </form><!--FORM-->
+              </div><!--TOP-->
+              <section class="body">
+                  <input type="button" value="7" name="btn" class="btn"> </input>
+                  <input type="button" value="8" name="btn" class="btn"> </input>
+                  <input type="button" value="9" name="btn" class="btn"> </input>
+                  <input type="button" value="+" name="soma" class="btn"> </input>
+                  <input type="button" value="C" name="C" class="btn"> </input>
+                  <input type="button" value="4" name="btn" class="btn"> </input>
+                  <input type="button" value="5" name="btn" class="btn"> </input>
+                  <input type="button" value="6" name="btn" class="btn"> </input>
+                  <input type="button" value="-" name="subtrair" class="btn"> </input>
+                  <input type="button" value="CE" name="CE" class="btn"> </input>
+                  <input type="button" value="1" name="btn" class="btn"> </input>
+                  <input type="button" value="2" name="btn" class="btn"> </input>
+                  <input type="button" value="3" name="btn" class="btn"> </input>
+                  <input type="button" value="*" name="multiplicar" class="btn"> </input>
+                  <input type="button" value="=" name="igual" class="btn igual"> </input>
+                  <input type="button" value="0" name="btn" class="btn zero"> </input>
+                  <input type="button" value="." name="btn" class="btn"> </input>
+                  <input type="button" value="/" name="dividir" class="btn"> </input>
+                  <p></p>
+                  <input type="button" value="2√x" name="raiz" class="btn"> </input>
+                  <input type="button" value="x²" name="elevado2" class="btn"> </input>
+                  <input type="button" value="x³" name="elevado3" class="btn"> </input>
+              </section><!--CONTAINER-->
+          </div>
+      </section><!--TITULO-->
+      <section class = "card">
+        <div id="foto" class="linhaDeInput">
+          <img src="img/camera.png" alt="" id="imgFoto"> 
+        </div>
+        <!--LINHAS DE INPUT-->
+          <div class="linhaDeInput">
+              <label>Produto</label>
+              <input type="text" id="nomeProduto" placeholder="Nome do produto"></input>
+          </div>
+          <div class="linhaDeInput">
+            <label>Lote</label>
+            <input type="text" id="loteProduto" placeholder="Lote do produto"></input>
+        </div>
+          <div class="linhaDeInput">
+            <label>Quantidade</label>
+            <input type="text" id="quantidadeProduto" placeholder="Quantidade do produto"></input>
+        </div>
+          <div class="linhaDeInput">
+              <label>Valor</label>
+              <input type="text" id="valorProduto" placeholder="Valor do produto"></input>
+          </div>
+          <div class="linhaDeInput">
+            <label>Imagem</label>
+            <input type="file" id="flImage"></input>
+        </div>
+          <!--BOTÕES DE SALVAR E CANCELAR CADASTRO DE PRODUTOS-->
+          <button id="btn1" onclick="produto.salvar()">Salvar</button>
+          <button id= "btn1-1" onclick="produto.cancelar()">Cancelar</button>
+      </section>
+      <!--DESCRIÇÃO DO CONTEÚDO-->
+      <section class="conteudo" style="overflow: auto;height: 150px;">
+          <table border=1 id="tabela">
+            <tr class="files">
+              <th><input type="text" placeholder="Cosultar com Código do Produto"></th>
+              <th><input type="text" placeholder="Consultar com Nome do Produto"></th>
+              <th><input type="text" placeholder="Consultar com Lote do Produto"></th>
+              <th colspan="3"><input type="text" placeholder="Consultar com Valor do Produto"></th>
+            </tr>
+              <tr>
+                  <th class="center">ID</th>
+                  <th>Produto</th>
+                  <th>Lote</th>
+                  <th>Quantidade</th>
+                  <th>Valor</th>
+                  <th>Ações</th>
+              </tr>
+             
+              <tbody id="tbody">                   
+              </tbody>
+          </table>
+      </section>
+  </main>
+
+      <!-- INICIO DO FOOTER (Djou)-->
+  <footer id="containerF">
+    
+    <div id="footerOrientação">
+      <div>
+        <h3 class="acessibilidade" >CONTA</h3>
+        <a class="acessibilidade"  href="">Conta</a>
+        <a class="acessibilidade"  href="">Histórico de pedidos</a>
+      </div>
+
+      <div>
+        <h3 class="acessibilidade">ENTRE EM CONTATO</h3>
+        <a href="" class="acessibilidade">Contatos</a>
+        <a href="" class="acessibilidade">Redes sociais</a>
+      </div>
+
+      <div>
+        <h3 class="acessibilidade" >FUNCIONÁRIOS</h3>
+        <a class="acessibilidade"  href="intranet.html">Intranet</a>
+        <a class="acessibilidade"  href="index.html">Home</a>
+      </div>
+    </div>
+
+    <!-- DIREITOS AUTORAIS DE PROPRIEDADE ARTISTICA DO SITE (Djou)-->
+    <small>&copy; Copyright 2021, Todos os direitos reservados</small>
+
+  </footer>
+   <!--LIBRAS-->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!--SCRIPT GERAL-->
+  <script src="js/intranet.js"></script>
+</body>
+
+</html>
