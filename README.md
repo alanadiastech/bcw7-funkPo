@@ -17,7 +17,7 @@ Equipe:
 
 [@BernardoLoureiro](https://github.com/BernardoGriz)
 
-[@](https://github.com/)
+[@HugoAndre](https://github.com/hugoandre10)
 
 ##
 
