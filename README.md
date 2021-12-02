@@ -1,6 +1,6 @@
-# FUNK PÔ  
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/194345426@N08" title=""><img src="https://live.staticflickr.com/65535/51636168283_ea7beba3af_z.jpg" width="1000" height="480" align="center" alt="Logo Funk Pô"></a>
+<a data-flickr-embed="true" href="https://github.com/alanadiastech" title=""><img src="https://live.staticflickr.com/65535/51636168283_ea7beba3af_z.jpg" width="250" height="150" align="center" alt="Logo Funk Pô"></a>
+# FUNK PÔ 
 
 ##
 
