@@ -1,9 +1,12 @@
+<div align="center">
+  
+  <a data-flickr-embed="true" href="https://github.com/alanadiastech" title=""><img src="https://live.staticflickr.com/65535/51636168283_ea7beba3af_z.jpg" width="250" height="150" align="center" alt="Logo Funk Pô"></a>
+  
+  ##
+  
+  # FUNK PÔ 
 
-<a data-flickr-embed="true" href="https://github.com/alanadiastech" title=""><img src="https://live.staticflickr.com/65535/51636168283_ea7beba3af_z.jpg" width="250" height="150" align="center" alt="Logo Funk Pô"></a>
-# FUNK PÔ 
-
-##
-
+</div>
 
 ### Projeto em equipe, do modulo jQuery do curso fullStack de desenvolvimento Web da SoulCode.
 
